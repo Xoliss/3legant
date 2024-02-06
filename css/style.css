@@ -1,0 +1,863 @@
+body {
+  max-width: 1500px;
+  margin: 0 20px 0 20px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  margin-left: 160px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.IMG {
+  cursor: pointer;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.IMG:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.star,
+.stars {
+  z-index: 10;
+}
+
+header {
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 171, 0, 0.64)), to(rgba(255, 171, 0, 0.64))), #FFF;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #FFF;
+  position: absolute;
+  z-index: 10;
+}
+header .vipad {
+  position: absolute;
+  left: -94px;
+  top: 60px;
+  width: 100px;
+  display: none;
+  background: none;
+}
+header .vipad__menu {
+  width: 150%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  text-align: center;
+  z-index: 11;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .menu {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  z-index: 11;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+header .menu:hover {
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header .header__menu-item:hover > .vipad {
+  display: initial;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+header .header__menu-item {
+  position: relative;
+}
+header .header__icon-item {
+  margin-right: 20px;
+}
+header .header__icon {
+  margin-right: 160px;
+}
+header .strelka1 {
+  padding-left: 10px;
+}
+header .strelka2 {
+  padding-left: 19px;
+}
+
+.top {
+  position: relative;
+  display: inline-block;
+}
+.top .top__img {
+  width: 1500px;
+  padding-top: 50px;
+  margin: 0;
+}
+.top .intro {
+  width: 450px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+.top .blue {
+  color: var(--Blue, #377DFF);
+}
+.top .text {
+  position: absolute;
+  top: 55%;
+  left: 50.1%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.top .shopping {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 56px;
+  border-radius: 8px;
+  background-color: black;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.top .shopping:hover {
+  background-color: rgba(55, 125, 255, 0.8392156863);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.top .shopping:hover .button__text {
+  color: rgb(248, 248, 248);
+  text-shadow: 2px 2px 2px #000;
+}
+.top .button__text {
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+
+.brends .brends__inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 50px 0 50px;
+}
+.brends .brend {
+  margin: 0 auto;
+}
+
+.new .new__inner {
+  margin: 50px 100px 50px 100px;
+}
+.new .zagolovok {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+}
+.new .kartochki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  padding-top: 30px;
+}
+.new .kartochka {
+  width: 262px;
+}
+.new .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  padding-left: 0;
+}
+.new .name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.d {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.korz {
+  background-color: #FFF;
+  border-radius: 40%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.korz:hover {
+  background-color: rgba(225, 225, 225, 0.662745098);
+  -webkit-box-shadow: 1px 1px rgba(46, 46, 46, 0.2901960784);
+          box-shadow: 1px 1px rgba(46, 46, 46, 0.2901960784);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.ic {
+  width: 40px;
+  width: 40px;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+
+.ic:hover {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.price {
+  font-size: 16px;
+}
+
+.shop .shop__inner {
+  margin: 50px 100px -30px 100px;
+}
+.shop .zagolovok {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+}
+.shop .collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+.shop .kartochka {
+  cursor: pointer;
+  width: 550px;
+  position: relative;
+}
+.shop .kartochka .collection__name {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 82.2%;
+  font-size: 2.2em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  -webkit-transition: top 0.8s ease;
+  transition: top 0.8s ease;
+}
+.shop .kartochka .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 92, 92, 0.061);
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.shop .kartochka .link {
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 57%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
+  color: rgba(221, 221, 221, 0.794);
+  text-decoration: none;
+  padding-bottom: 250px;
+}
+.shop .kartochka .link a {
+  padding: 15px 40px;
+  text-align: center;
+  background: #ff921e;
+  color: white;
+  border: 1px solid white;
+  z-index: 1;
+}
+.shop .kartochka:hover .overlay {
+  display: block;
+  background: rgba(40, 40, 40, 0.563);
+}
+.shop .kartochka:hover .collection__name {
+  text-transform: uppercase;
+  top: 40%;
+  color: white;
+}
+.shop .kartochka:hover .link {
+  opacity: 1;
+}
+.shop .other1,
+.shop .other2 {
+  width: 550px;
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+}
+.shop .other1 .collection__name-other,
+.shop .other2 .collection__name-other {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  width: 100%;
+  left: 5%;
+  top: 63%;
+  font-size: 2.2em;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  -webkit-transition: top 0.8s ease;
+  transition: top 0.8s ease;
+}
+.shop .other1 .overlay,
+.shop .other2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 92, 92, 0.061);
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.shop .other1 .link-other,
+.shop .other2 .link-other {
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  left: 5%;
+  top: 77%;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
+  color: rgba(221, 221, 221, 0.794);
+  text-decoration: none;
+  padding-bottom: 45px;
+}
+.shop .other1 .link-other a,
+.shop .other2 .link-other a {
+  padding: 15px 40px;
+  text-align: center;
+  background: #ff921e;
+  color: white;
+  border: 1px solid white;
+  z-index: 1;
+}
+.shop .other1:hover .overlay,
+.shop .other2:hover .overlay {
+  display: block;
+  background: rgba(40, 40, 40, 0.563);
+}
+.shop .other1:hover .collection__name-other,
+.shop .other2:hover .collection__name-other {
+  left: 5%;
+  text-transform: uppercase;
+  top: 40%;
+  color: white;
+}
+.shop .other1:hover .link-other,
+.shop .other2:hover .link-other {
+  opacity: 1;
+  text-align: left;
+}
+
+.best .best__inner {
+  margin: 50px 100px 50px 100px;
+}
+.best .zagolovok {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+}
+.best .kartochki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  padding-top: 30px;
+}
+.best .kartochka {
+  width: 262px;
+}
+.best .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  padding-left: 0;
+}
+.best .name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+.best .kartochki {
+  margin: 20px;
+}
+
+.timer .timer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 100px 50px 100px;
+}
+.timer .sale {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 171, 0, 0.4)), to(rgba(255, 171, 0, 0.4))), #FFF;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.4) 0%, rgba(255, 171, 0, 0.4) 100%), #FFF;
+  padding: 130px 100px 0 200px;
+}
+.timer .text-small {
+  color: var(--Blue, #377DFF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.timer .sale__text {
+  color: var(--black-900, #121212);
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.timer .text {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.timer .button__text {
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+.timer .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: black;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.timer .button:hover {
+  background-color: rgba(55, 125, 255, 0.8392156863);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.timer .button:hover .button__text {
+  color: rgb(248, 248, 248);
+  text-shadow: 2px 2px 2px #000;
+}
+.timer .IMG {
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.timer .IMG:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pluses .pluses__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 100px 50px 100px;
+}
+.pluses .block {
+  padding: 20px 0;
+  background: var(--neutral-02100, #F3F5F7);
+  text-align: center;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 20px;
+}
+.pluses .text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.pluses .text-small {
+  color: var(--neutral-04100, #6C7275);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.promo .promo__inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 100px 50px 100px;
+}
+.promo .text {
+  color: var(--neutral-04100, #6C7275);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.promo .instagram {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 55px;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#2e1631), color-stop(#fb10ff), to(#421549));
+  background: linear-gradient(90deg, #2e1631, #fb10ff, #421549);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.promo .text-small {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.promo .inst {
+  color: var(--neutral-04100, #6C7275);
+  padding-left: 0 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.promo .img {
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+.signup {
+  background-color: #000;
+  background-image: url("../images/background.png");
+  height: 360px;
+}
+.signup .signup__inner {
+  text-align: center;
+  margin: 50px 100px 50px 100px;
+}
+.signup .cont {
+  padding-top: 100px;
+}
+.signup .zagolovok {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 0;
+}
+.signup .text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.signup .email {
+  cursor: pointer;
+  font-size: 22px;
+  text-decoration: underline;
+  color: #ff921e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.signup .email:hover {
+  font-size: 27px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #000;
+}
+.footer h2,
+.footer h1,
+.footer li {
+  color: white;
+}
+.footer .footer__inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 100px 50px 100px;
+  position: relative;
+}
+.footer .footer__inner::after {
+  content: "";
+  bottom: 70px;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(90, 90, 90);
+}
+.footer .line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.footer .line1::after {
+  content: "";
+  bottom: 70px;
+  position: absolute;
+  height: 25px;
+  width: 1px;
+  background-color: rgb(90, 90, 90);
+  top: 17px;
+  left: 130px;
+}
+.footer .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+.footer .zagolovok {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer .text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.footer .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer__menu-item {
+  margin: 0 0 0 25px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.footer .footer__menu-item:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.footer .line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .promo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.footer .text-small {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer .logos {
+  margin-left: 20px;
+}
+.footer .icon {
+  padding-left: 25px;
+  cursor: pointer;
+}
+.footer .menu {
+  text-decoration: none;
+}

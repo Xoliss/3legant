@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header-2 {
+  width: 100vw;
+  height: 40px;
+}
+.header-2 .header__inner-2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.header-2 .menu {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.authorisation .authorisation__inner {
+  width: 1500px;
+}
+.authorisation .user {
+  background-image: url("../images/background2.png");
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.authorisation h4 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.authorisation .element {
+  padding-bottom: 20px;
+}
+.authorisation .submit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 6px 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.authorisation p {
+  font-size: 25px;
+}
+.authorisation .block {
+  margin-top: 10px;
+  width: 210px;
+  height: 25px;
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.top-2 {
+    .top-2__inner {
+        align-items: center;
+        margin: 0;
+        padding-top: 90px;
+    }
+
+    .text-2 {
+        padding: 130px 20px 100px 0;
+        text-align: center;
+    }
+
+    .text-big {
+        margin: 0 0 130px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.4px;
+        margin-top: 10px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #ffa600, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 3.5s linear infinite;
+        background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: -500%;
+        }
+
+        100% {
+            background-position: 500%;
+        }
+    }
+
+    .brend {
+        padding: 10px 40px 10px 40px;
+        transition: all 1.5s ease;
+    }
+
+    .brend:hover {
+        transition: .65s;
+        box-shadow: -5px 10px #4e4e4e75;
+        border-radius: 20px;
+    }
+}
+
+.new {
+    .zagolovok-2 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .IMG {
+        width: 262px;
+        height: 275px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .new {
+        .IMG {
+            height: 200px;
+        }
+    }
+}
